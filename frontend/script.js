@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let incorrectCount = 0;
 
     function fetchDestination() {
-        fetch('https://globetrotter-backend.onrender.com') // Replace with your backend URL if different
+        fetch('https://globetrotter-backend.onrender.com/api/destination') // Replace with your backend URL if different
             .then(response => response.json())
             .then(data => {
                 currentDestination = data;
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     generateButton.addEventListener('click', () => {
-        fetch('https://globetrotter-backend.onrender.com', {
+        fetch('https://globetrotter-backend.onrender.com/api/generate-destinations', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
