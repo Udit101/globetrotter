@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f0f8ff; /* Light blue background */
+    margin: 0; /* Remove default body margins */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+#app {
+    width: 80%;
+    max-width: 600px; /* Limit the width for readability */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners for the app container */
+    background-color: white; /* White background for the app container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Spacing between sections */
+#clues {
+    margin-bottom: 20px;
+}
+
+#options {
+    margin-bottom: 20px;
+}
+
+#feedback {
+    margin-bottom: 20px;
+}
+
+#score {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none; /* Remove default button border */
+    border-radius: 25px; /* Rounded corners for buttons */
+    background-color: #4682B4; /* Steel blue background */
+    color: white; /* White text color */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #2E64FE; /* Slightly darker blue on hover */
+}
+
+#options button {
+    margin: 5px;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Input field styling */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+/* Horizontal rule styling */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
