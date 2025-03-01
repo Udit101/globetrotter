@@ -2,11 +2,11 @@
 
 ## Description
 
-Globetrotter is a full-stack web application where users are presented with cryptic clues about a famous place and must guess the destination. Once they guess correctly, they unlock fun fact about the destination!
+Globetrotter is a full-stack web application where users are presented with cryptic clues about a famous place and must guess the destination. Once they guess correctly, they unlock fun facts about the destination!
 
 ## Demo
 
-https://globetrotterwebsite.netlify.app/
+[https://globetrotterwebsite.netlify.app/](https://globetrotterwebsite.netlify.app/)
 
 ## Tech Choices
 
@@ -62,7 +62,7 @@ https://globetrotterwebsite.netlify.app/
     node server.js
     ```
 
-5.  **Deploy the Frontend to Netlify:**
+## Deployment Instructions
 
 ### Part 1: Deploying the Frontend to Netlify
 
@@ -172,10 +172,9 @@ https://globetrotterwebsite.netlify.app/
     *   Visit your deployed Netlify frontend URL (e.g., `https://your-site-name.netlify.app`).
     *   Play the game to make sure everything is working correctly.
 
-
 ## Features
 
-*   Presents random clue about a chosen destination.
+*   Presents a random clue about a chosen destination.
 *   Allows users to select from multiple possible destination answers.
 *   Provides immediate feedback after answering (correct/incorrect).
 *   Includes a 'Next' button to load a different random destination.
