@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     challengeButton.addEventListener('click', () => {
         const username = usernameInput.value.trim();
         if (username) {
-            const inviteLink = `https://your-globetrotter-website.com/?invited_by=${username}`; // REPLACE THIS URL
+            const inviteLink = `https://globetrotterwebsite.netlify.app/?invited_by=${username}`; // REPLACE THIS URL
             const message = `Hey, play Globetrotter with me! I'm ${username} and my score is ${correctCount}.  Join me at: ${inviteLink}`;
 
             const whatsappURL = `https://api.whatsapp.com/send?text=${encodeURIComponent(message)}`;
