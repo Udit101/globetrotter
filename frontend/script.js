@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .map(option => {
                 // Capitalize each option for display
                 const capitalizedOption = option.charAt(0).toUpperCase() + option.slice(1);
-                return `<button data-city="${option}">${capitalizedOption}</button>`;  // Store the original city in data-city
+                return `<button data-city="${option.toLowerCase()}">${capitalizedOption}</button>`;  // Store the original city in data-city
             })
             .join('');
     
@@ -76,10 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function checkAnswer(selectedCity, correctCity, correctCountry) {
+ function checkAnswer(selectedCity, correctCity, correctCountry) {
         feedbackDiv.classList.remove('correct', 'incorrect');
 
-        if (selectedCity === correctCity) {
+        if (selectedCity.toLowerCase() === correctCity.toLowerCase()) {
             feedbackDiv.textContent = `Correct! Fun Fact: ${currentDestination.fun_fact[0]}`;
             feedbackDiv.classList.add('correct');
             correctCount++;
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
             fetchDestination(); // Load the next question
         }, 5000); // 5000 milliseconds = 5 second
     }
-
+    
     nextButton.addEventListener('click', fetchDestination);
 
     challengeButton.addEventListener('click', () => {
