@@ -45,10 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function displayOptions(correctCity, correctCountry) {
         const incorrectOptions = [
-            'Paris', 'Tokyo', 'New York', 'London', 'Rome',  
-            'Berlin', 'Madrid', 'Sydney', 'Toronto', 'Moscow',  
-            'Beijing', 'Dubai', 'Singapore', 'Bangkok', 'Seoul',  
-            'Los Angeles', 'Chicago', 'San Francisco', 'Hong Kong', 'Mexico City'
+            'Ushuaia', 'Kotor', 'Luang Prabang', 'Gjirokastër', 'Matera',  
+            'Colmar', 'Chefchaouen', 'Zanzibar City', 'Lijiang', 'Sibiu',  
+            'Samarkand', 'Ouro Preto', 'Bergen', 'Hallstatt', 'Meteora',  
+            'New York', 'London', 'Tokyo', 'Paris', 'Rome',  
+            'Berlin', 'Madrid', 'Sydney', 'Toronto', 'Moscow'
           ];
         const filteredIncorrectOptions = incorrectOptions.filter(city => city !== correctCity);
         const shuffledIncorrectOptions = filteredIncorrectOptions.sort(() => Math.random() - 0.5);
