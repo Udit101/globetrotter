@@ -147,6 +147,11 @@ app.get('/api/destination', async (req, res) => {
     }
 });
 
+// Add the root path route handler here!
+app.get('/', (req, res) => {
+    res.send('Globetrotter Backend is running!'); // Or any appropriate message
+});
+
 app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`);
 });
